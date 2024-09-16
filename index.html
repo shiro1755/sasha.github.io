@@ -14,12 +14,18 @@
       height: 50px;
       background-color: #f0f0f0;
       overflow: hidden;
+      display: flex; /* Добавляем flexbox для выравнивания */
+      align-items: center; /* Выравниваем по вертикали */
     }
 
     .marquee-content {
       display: inline-block;
       white-space: nowrap;
       animation: marquee 10s linear infinite;
+    }
+
+    .marquee-content img { /* Добавляем стили для изображения */
+      margin-right: 10px; /* Добавляем отступ справа от изображения */
     }
 
     @keyframes marquee {
@@ -31,7 +37,8 @@
 <body>
   <div class="marquee">
     <div class="marquee-content">
-      ляляля Саша 
+      <img src="123.jpg" alt="Your image" height="30"> 
+      привет Саша
     </div>
   </div>
 </body>
